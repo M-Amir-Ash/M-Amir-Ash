@@ -2,7 +2,9 @@
 <h3 align="center">💻 Aspiring Software Engineer | AI, Mobile & Web Development Enthusiast | Lifelong Learner</h3>
 
 <p align="center"> 
-  <img src="https://komarev.com/ghpvc/?username=m-amir-ash&label=Profile%20views&color=0e75b6&style=flat" alt="m-amir-ash" /> 
+  <img src="https://komarev.com/ghpvc/?username=m-amir-ash&label=Profile%20Views&color=brightgreen&style=flat-square" alt="Profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=m-amir-ash&label=Visitors&color=ff69b4&style=plastic" alt="Profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=m-amir-ash&label=Hits&color=blueviolet&style=for-the-badge" alt="Profile views"/>
 </p>
 
 ---
