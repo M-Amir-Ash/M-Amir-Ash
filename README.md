@@ -25,4 +25,4 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=m-amir-ash&show_icons=true&locale=en&theme=github_dark" alt="m-amir-ash" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=m-amir-ash&theme=dark" alt="m-amir-ash" /></p>
+<p><img align="center" src="[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=m-amir-ash&theme=dark)](https://git.io/streak-stats)" alt="m-amir-ash" /></p>
