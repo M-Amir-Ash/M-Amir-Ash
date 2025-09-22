@@ -3,7 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=m-amir-ash&label=Profile%20views&color=0e75b6&style=flat" alt="m-amir-ash" /> </p>
 
-
 - 🌱 I’m currently learning **Next.js, React Native, Cloud Computing with Spark & Docker, Advanced ML Models**
 
 - 💬 Ask me about **React, Vue, GSAP, Docker, AI/ML basics, Cybersecurity tools**
