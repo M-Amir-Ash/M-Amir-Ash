@@ -6,7 +6,7 @@
   <img src="https://komarev.com/ghpvc/?username=m-amir-ash&label=Visitors&color=ff69b4&style=plastic" alt="Profile views"/>
   <img src="https://komarev.com/ghpvc/?username=m-amir-ash&label=Hits&color=blueviolet&style=plastic" alt="Profile views"/>
   <img src="https://img.shields.io/github/followers/m-amir-ash?label=Followers&style=flat&color=0e75b6" alt="GitHub Followers"/>
-<img src="https://img.shields.io/github/stars/m-amir-ash?affiliations=OWNER&label=Stars&style=flat&color=yellow" alt="GitHub Stars"/>
+  <img src="https://img.shields.io/github/stars/m-amir-ash?affiliations=OWNER&label=Stars&style=flat&color=yellow" alt="GitHub Stars"/>
 </p>
 
 ---
