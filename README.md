@@ -57,7 +57,7 @@
 
 ### 🏆 Trophy
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=m-amir-ash&theme=onedark" />
+  <img src="https://github-profile-trophy.vercel.app/?username=m-amir-ash&theme=onedark" alt="Tropy Stats"/>
 </p>
 
 ---
