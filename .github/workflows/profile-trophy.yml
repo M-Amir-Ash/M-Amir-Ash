@@ -3,7 +3,7 @@ name: Generate Profile Trophy
 on:
   workflow_dispatch:
   schedule:
-    - cron: "10 0 * * *"
+    - cron: "15 0 * * *"
 
 permissions:
   contents: write
@@ -22,14 +22,10 @@ jobs:
       - name: Generate trophy SVG
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           username: M-Amir-Ash
-          file: assets/trophy.svg
+          output_path: assets/trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
           theme: onedark
-          cols: -1
-          rows: 2
-          no-background: true
-          no-frame: true
 
       - name: Commit generated trophy
         run: |
@@ -40,8 +36,7 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No trophy changes"
-            exit 0
+          else
+            git commit -m "Update GitHub trophy"
+            git push
           fi
-
-          git commit -m "Update GitHub trophy"
-          git push
