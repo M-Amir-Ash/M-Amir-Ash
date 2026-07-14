@@ -8,13 +8,20 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Create output folder
         run: mkdir -p profile-summary-card-output/github_dark
@@ -22,10 +29,16 @@ jobs:
       - name: Generate trophy SVG
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
-          username: M-Amir-Ash
-          output_path: profile-summary-card-output/github_dark/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          username: M-Amir-Ash
+          file: profile-summary-card-output/github_dark/trophy.svg
           theme: onedark
+          max-cols: 7
+          max-rows: 1
+          margin-width: 10
+          margin-height: 10
+          no-background: true
+          no-frame: true
 
       - name: Commit trophy
         run: |
@@ -35,8 +48,10 @@ jobs:
           git add profile-summary-card-output/github_dark/trophy.svg
 
           if git diff --cached --quiet; then
-            echo "No trophy changes"
-          else
-            git commit -m "Generate GitHub trophy"
-            git push
+            echo "No trophy changes detected."
+            exit 0
           fi
+
+          git commit -m "Generate GitHub trophy"
+          git pull --rebase origin main
+          git push origin HEAD:main
