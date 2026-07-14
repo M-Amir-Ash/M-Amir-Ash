@@ -16,27 +16,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create assets folder
-        run: mkdir -p assets
+      - name: Create output folder
+        run: mkdir -p profile-summary-card-output/github_dark
 
       - name: Generate trophy SVG
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: M-Amir-Ash
-          output_path: assets/trophy.svg
+          output_path: profile-summary-card-output/github_dark/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           theme: onedark
 
-      - name: Commit generated trophy
+      - name: Commit trophy
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/trophy.svg
+          git add profile-summary-card-output/github_dark/trophy.svg
 
           if git diff --cached --quiet; then
             echo "No trophy changes"
           else
-            git commit -m "Update GitHub trophy"
+            git commit -m "Generate GitHub trophy"
             git push
           fi
