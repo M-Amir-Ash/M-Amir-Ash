@@ -59,7 +59,7 @@
 
 <p align="center">
   <img
-    src="./assets/trophy.svg"
+    src="./profile-summary-card-output/github_dark/trophy.svg"
     alt="GitHub Trophies"
   />
 </p>
