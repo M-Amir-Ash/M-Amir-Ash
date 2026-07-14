@@ -81,3 +81,10 @@
     alt="M-Amir-Ash Top Languages"
   />
 </p>
+
+<p align="center">
+  <img
+    src="./profile-summary-card-output/github_dark/0-profile-details.svg"
+    alt="M-Amir-Ash Profile Details"
+  />
+</p>
