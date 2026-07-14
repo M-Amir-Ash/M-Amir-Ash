@@ -1,0 +1,47 @@
+name: Generate Profile Trophy
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create assets folder
+        run: mkdir -p assets
+
+      - name: Generate trophy SVG
+        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          username: M-Amir-Ash
+          file: assets/trophy.svg
+          theme: onedark
+          cols: -1
+          rows: 2
+          no-background: true
+          no-frame: true
+
+      - name: Commit generated trophy
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/trophy.svg
+
+          if git diff --cached --quiet; then
+            echo "No trophy changes"
+            exit 0
+          fi
+
+          git commit -m "Update GitHub trophy"
+          git push
