@@ -59,7 +59,7 @@
 
 <p align="center">
   <img
-    src="https://github-profile-trophy-reiyua-mirror.vercel.app/?username=M-Amir-Ash&theme=onedark&column=7&margin-w=10&margin-h=10&no-frame=true&no-bg=true"
+    src="./assets/trophy.svg"
     alt="GitHub Trophies"
   />
 </p>
@@ -70,14 +70,14 @@
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api?username=M-Amir-Ash&show_icons=true&theme=github_dark&include_all_commits=true&cache_seconds=86400"
+    src="./profile-summary-card-output/github_dark/3-stats.svg"
     alt="M-Amir-Ash GitHub Stats"
   />
 </p>
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=M-Amir-Ash&layout=compact&theme=github_dark&langs_count=8&cache_seconds=86400"
+    src="./profile-summary-card-output/github_dark/1-repos-per-language.svg"
     alt="M-Amir-Ash Top Languages"
   />
 </p>
