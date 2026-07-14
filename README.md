@@ -55,18 +55,29 @@
 
 ---
 
-### 🏆 Trophy
+### 🏆 GitHub Trophies
+
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=m-amir-ash&theme=onedark" alt="Tropy Stats"/>
+  <img
+    src="https://github-profile-trophy-reiyua-mirror.vercel.app/?username=M-Amir-Ash&theme=onedark&column=7&margin-w=10&margin-h=10&no-frame=true&no-bg=true"
+    alt="GitHub Trophies"
+  />
 </p>
 
 ---
 
 ### 📊 GitHub Stats
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=m-amir-ash&show_icons=true&locale=en&theme=github_dark" alt="GitHub Stats" />
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=M-Amir-Ash&show_icons=true&theme=github_dark&include_all_commits=true&cache_seconds=86400"
+    alt="M-Amir-Ash GitHub Stats"
+  />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=m-amir-ash&show_icons=true&locale=en&layout=compact&theme=github_dark" alt="Top Languages" />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=M-Amir-Ash&layout=compact&theme=github_dark&langs_count=8&cache_seconds=86400"
+    alt="M-Amir-Ash Top Languages"
+  />
 </p>
